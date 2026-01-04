@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Filament Swatch Reference — Disclosure & Links</title>
+  <meta name="description" content="Disclosure landing page for filament swatch QR codes and related affiliate links." />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; background:#fff; color:#111; }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 28px 18px 40px; }
+    .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 18px; background: #fafafa; }
+    h1 { font-size: 22px; margin: 0 0 10px; }
+    h2 { font-size: 16px; margin: 18px 0 8px; }
+    p, li { line-height: 1.45; }
+    .note { font-size: 14px; color: #333; }
+    .disclosure { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 12px; padding: 14px; }
+    .btns a {
+      display:inline-block; padding: 10px 12px; margin: 6px 8px 0 0;
+      border-radius: 10px; text-decoration:none; border:1px solid #d1d5db;
+      color:#111; background:#fff;
+    }
+    .btns a.primary { background:#111; color:#fff; border-color:#111; }
+    code { background:#f3f4f6; padding: 2px 6px; border-radius: 6px; }
+    footer { margin-top: 26px; font-size: 12px; color:#555; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Printed Filament Color Swatch — Reference Page</h1>
+    <p class="note">
+      This page is intended for QR codes printed on physical filament color reference samples.
+    </p>
+
+    <div class="disclosure">
+      <strong>Affiliate disclosure:</strong>
+      Some links on this page may be affiliate links. If you click an affiliate link and make a purchase,
+      I may earn a commission at no additional cost to you.
+    </div>
+
+    <h2>What this is</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Reference sample:</strong> “Printed filament color swatch” / “Reference sample printed using Bambu PLA.”</li>
+        <li><strong>Purpose:</strong> Help you identify a filament color and locate the corresponding product page.</li>
+        <li><strong>Not an official product:</strong> This is an independent reference item and is not manufactured by Bambu Lab.</li>
+      </ul>
+    </div>
+
+    <h2>Links</h2>
+    <p class="note">
+      If your QR code included a specific color or SKU, it should route here and then to the relevant product page.
+      For now, use the general link below while you finalize per-swatch pages.
+    </p>
+
+    <div class="btns">
+      <!-- Replace the href below with your Awin-generated Bambu Lab affiliate link when you have it. -->
+      <a class="primary" href="https://us.store.bambulab.com/" rel="nofollow sponsored">Bambu Lab Store (may be affiliate)</a>
+
+      <!-- Optional: a non-affiliate informational link (keeps reviewers comfortable). -->
+      <a href="https://wiki.bambulab.com/" rel="nofollow">Bambu Lab Wiki (non-affiliate)</a>
+    </div>
+
+    <h2>How to map QR codes (optional)</h2>
+    <p class="note">
+      Recommended structure for later:
+      <code>/swatches/pla-basic-blue.html</code> or <code>/?sku=PLA123</code>
+      so each QR code can point to a specific swatch page.
+    </p>
+
+    <footer>
+      © <span id="y"></span> Independent publisher. This page may contain affiliate links.  
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
